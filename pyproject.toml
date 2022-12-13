@@ -41,7 +41,7 @@ classifiers = [
     "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
 ]
-dependencies = ["quantities == 0.13.0", "PyParsing ~= 3.0", "regex"]
+dependencies = ["numpy", "PyParsing ~= 3.0", "quantities == 0.13.0", "regex"]
 
 [project.optional-dependencies]
 lint = ["black==22.6.0", "flake8==4.0.1", "isort==5.10.1", "mypy==0.971"]
