@@ -31,7 +31,7 @@ class ChefScriptInterpreter:
 
     def interpret_file(self, filename: str):
         self.filename = filename
-        self.code = Path(filename).resolve().read_text()
+        self.code = Path(filename).resolve().read_text(encoding="utf-8")
         self._interpret(self.code)
 
     def interpret_stdin(self):
