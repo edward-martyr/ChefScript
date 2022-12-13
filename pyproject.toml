@@ -26,7 +26,7 @@ show_error_codes = true
 [project]
 name = "ChefScript"
 dynamic = ["version"]
-description = "A DSL language for storing, creating and using recipes"
+description = "An esolang for storing, creating and using recipes"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
