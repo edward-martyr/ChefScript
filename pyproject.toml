@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=62", "setuptools_scm[toml]>=7"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools_scm]
+version_scheme = "python-simplified-semver"
+local_scheme = "no-local-version"
+
+[tool.isort]
+multi_line_output = 3
+combine_as_imports = true
+line_length = 88
+profile = "black"
+
+[tool.black]
+line-length = 88
+
+[tool.mypy]
+disable_error_code = []
+ignore_missing_imports = true
+show_error_codes = true
+
+[project]
+name = "ChefScript"
+dynamic = ["version"]
+description = "A DSL language for storing, creating and using recipes"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+keywords = ["ChefScript", "recipe", "cooking", "esolang", "esoteric"]
+authors = [
+    { name = "Yuanhao 'Nyoeghau' Chen", email = "nyoeghau@nyoeghau.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["quantities == 0.13.0", "PyParsing ~= 3.0", "regex"]
+
+[project.optional-dependencies]
+lint = ["black==22.6.0", "flake8==4.0.1", "isort==5.10.1", "mypy==0.971"]
+
+[project.scripts]
+ChefScript = "ChefScript.__main__:main"
+
+[project.urls]
+homepage = "https://github.com/edward-martyr/ChefScript"
+repository = "https://github.com/edward-martyr/ChefScript"
