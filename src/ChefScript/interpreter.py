@@ -107,7 +107,7 @@ class ChefScriptInterpreter:
                 if cook.scale.name not in [i.name for i in recipe.ingredients]:
                     raise ChefScriptRuntimeError(
                         f"Ingredient '{cook.scale.name}' "
-                        "is not in recipe '{recipe_name}'",
+                        f"is not in recipe '{recipe_name}'",
                         self.filename,
                         index_to_position(self.code, cook.idx),  # type: ignore
                     )

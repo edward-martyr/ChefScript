@@ -1,4 +1,4 @@
-# ChefScript: a DSL language for storing, creating and using recipes
+# ChefScript: an esolang for storing, creating and using recipes
 
 ## Installation
 

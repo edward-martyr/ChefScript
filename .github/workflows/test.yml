@@ -21,7 +21,4 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Test
         run: |
-          python -m pip install --upgrade pip
-          python -m pip install .
-          ChefScript --help
-          ChefScript tests/红烧肉.chefscript
+          make test
