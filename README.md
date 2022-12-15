@@ -73,7 +73,7 @@ A `quantity` is a `number` followed by a `unit`. It is recommended to write a `u
 
 ### Ingredient
 
-An `ingredient` is a `quantity` followed by the keyword `of` and a `name`. It is recommended to write a `name` using spaces to separate words (`chicken breast` looks better than `chicken_breast`), but sometimes an underscore as to be used when a word is in conflict with a keyword.
+An `ingredient` is a `quantity` followed by the keyword `of` and a `name`. It is recommended to write a `name` using spaces to separate words (`chicken breast` looks better than `chicken_breast`), but sometimes an underscore has to be used when a word is in conflict with a keyword.
 
 ```text
 1 lb of chicken breast
